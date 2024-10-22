@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Praca Zdalna z Nami</title>
+<style>
+    body, html {
+        height: 100%;
+        margin: 0;
+        font-family: Arial, sans-serif;
+        font-weight: bold;
+        color: white;
+    }
+    .bg {
+        background-image: url(https://github.com/OzgaRekrutacja/AdrianaOzga-Rekrutacja.pl/blob/main/image.jpg?raw=true);
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    .container {
+        text-align: center;
+        max-width: 600px;
+        width: 100%;
+    }
+    h2, h3 {
+        text-shadow: 2px 2px 4px black;
+    }
+    ul {
+        text-align: left;
+    }
+    .whatsapp-container {
+        position: relative;
+        display: inline-block;
+        margin-top: 20px;
+    }
+    .whatsapp-button {
+        width: 50px;
+        height: 50px;
+        background: #25D366;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        color: white;
+    }
+    .whatsapp-button img {
+        width: 30px;
+        height: 30px;
+    }
+    .whatsapp-bubble {
+        position: absolute;
+        top: -40px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: #d6e5d8;
+        color: black;
+        padding: 5px 10px;
+        border-radius: 10px;
+        white-space: nowrap;
+    }
+    .whatsapp-bubble::after {
+        content: '';
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: #d6e5d8 transparent transparent transparent;
+    }
+    .steps p::before {
+        content: counter(step) ". ";
+        counter-increment: step;
+        font-weight: bold;
+    }
+    .steps {
+        counter-reset: step;
+    }
+</style>
+</head>
+<body>
+
+<div class="bg">
+    <div class="container">
+        <h2>Zacznij zarabiać online z nami!</h2>
+        <p>Dziękuję za zainteresowanie ofertą. Jeśli chcesz dowiedzieć się więcej o współpracy, skontaktuj się przez WhatsApp.</p>
+        
+        <div class="steps">
+            <p>**Skontaktuj się ze mną przez WhatsApp:** Kliknij ikonę w prawym dolnym rogu lub użyj numeru **795649340**.</p>
+            <p>**Bezpośrednia rozmowa:** Wyjaśnię wszystkie szczegóły i odpowiem na Twoje pytania.</p>
+        </div>
+
+        <h3>Czego Cię nauczę?</h3>
+        <ul>
+            <li>Jak zarabiać online od A do Z.</li>   
+            <li>Jak efektywnie zarządzać czasem i zasobami.</li>
+        </ul>
+
+        <h3>Dlaczego warto?</h3>
+        <ul>
+            <li>**Szkolenia:** Otrzymasz pełne wsparcie.</li>
+            <li>**Współpraca:** Praca z renomowanymi firmami.</li>
+            <li>**Rozwój osobisty:** Nowe umiejętności na całe życie.</li>
+        </ul>
+
+        <div class="whatsapp-container">
+            <a href="https://wa.me/48795649340" class="whatsapp-button">
+                <img src="path-to-your-whatsapp-icon.png" alt="WhatsApp">
+            </a>
+            <div class="whatsapp-bubble">Napisz do mnie na WhatsApp</div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
